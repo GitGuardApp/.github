@@ -1,0 +1,45 @@
+name: Help
+description: Get general support regarding the use of GitGuardApp.
+
+body:
+  
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Kindly explain in detail your problem.
+    validations:
+      required: true
+
+  - type: input
+    id:GitGuard_version
+    attributes:
+      label: Version
+      description: What GitGuard version does this appear on? Run `GitGuard -v`
+      placeholder: ex. 0.0.1
+    validations:
+      required: true
+  
+  - type: textarea
+    id: code
+    attributes:
+      label: Example code
+      description: The code/log related to the problem.
+      placeholder: "Not applicable."
+
+  - type: textarea
+    id: os
+    attributes:
+      label: Operating system
+      description: The operating system you are running.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: The scope of the issue. Installation, code, runtime, other?
+    validations:
+      required: true
+      
